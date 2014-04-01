@@ -37,6 +37,11 @@ footer, header, hgroup, menu, nav, section {
 
 ol, ul {
   list-style: none;
+  display:inline;
+}
+
+li {
+  display:inline;
 }
 
 table {
@@ -118,7 +123,14 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+/*a:hover, a:focus {
+  text-decoration: underline;
+}*/
+
+a:hover,a:active
+{
+background-color:#66CCFF;
+}
 
 footer a {
   color: #F2F2F2;
@@ -201,8 +213,9 @@ ul, ol, dl {
 }
 
 ul {
-  list-style: inside;
-  padding-left: 20px;
+  list-style: none;
+  margin:0;
+  padding:0;
 }
 
 ol {
@@ -321,6 +334,38 @@ Full-Width Styles
   right: 0;
   height: 70px;
   background: url('../images/icon_download.png') no-repeat 0% 90%;
+}
+
+#navbar {
+  background-color: #E9E9E9;
+  display: inline;
+  width: 80%;
+  max-width: 450px;
+  overflow-y: hidden;
+  position: relative; 
+}
+
+.navbar-item {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  height: 20px;
+  color: #333333;
+  background-color: #E9E9E9;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  width: 25%;
+  text-align: center;
+  display: inline;
+  float: left;  
+  vertical-align: bottom;
+  border-bottom: 3px solid #E9E9E9;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .zip_download_link {
