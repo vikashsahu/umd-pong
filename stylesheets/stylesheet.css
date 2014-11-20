@@ -29,6 +29,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+p.single-sentence {
+  font-size: 20px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -47,6 +51,15 @@ li {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+img.profile {
+  height: 150px;
+  width: 150px;
+}
+
+img.main {
+  max-width: 100%
 }
 
 /*******************************************************************************
@@ -123,18 +136,41 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-/*a:hover, a:focus {
+a:hover, a:focus {
   text-decoration: underline;
-}*/
+}
 
-a:hover,a:active
+a.navbar-item:hover,a:active
 {
 background-color:#66CCFF;
 }
 
+a.navbar-item {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  height: 20px;
+  color: #333333;
+  background-color: #E9E9E9;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  width: 25%;
+  text-align: center;
+  display: block;
+  float: left;  
+  vertical-align: bottom;
+  border-bottom: 3px solid #E9E9E9;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
+  color: #66CCFF;
+  /*text-decoration: underline;*/
 }
 
 em {
@@ -148,7 +184,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -245,7 +281,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  /*border: 1px solid #373737;*/
   margin-bottom: 20px;
   text-align: left;
  }
@@ -260,6 +296,7 @@ th {
 td {
   padding: 10px;
   border: 1px solid #373737;
+  vertical-align: middle;
  }
 
 form {
@@ -339,8 +376,7 @@ Full-Width Styles
 #navbar {
   background-color: #E9E9E9;
   display: inline;
-  width: 80%;
-  max-width: 450px;
+  width: 100%;
   overflow-y: hidden;
   position: relative; 
 }
@@ -356,7 +392,7 @@ Full-Width Styles
   font-size: 0.75em;
   width: 25%;
   text-align: center;
-  display: inline;
+  display: block;
   float: left;  
   vertical-align: bottom;
   border-bottom: 3px solid #E9E9E9;
