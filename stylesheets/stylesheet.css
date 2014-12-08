@@ -48,6 +48,14 @@ li {
   /*display:inline;*/
 }
 
+li.question {
+  font-weight: bold;
+}
+
+li.answer {
+
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -99,7 +107,11 @@ h3 {
   font-size: 24px;
 }
 
-h4 {
+h4.one{
+  font-size: 21px;
+}
+
+h4.two{
   font-size: 21px;
   color: #373737;;
 }
@@ -281,8 +293,15 @@ hr {
   background: url('../images/bg_hr.png') repeat-x center;
 }
 
+hr.style-two {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+}
+
 table {
   /*border: 1px solid #373737;*/
+  width: 100%;
   margin-bottom: 20px;
   text-align: left;
  }
