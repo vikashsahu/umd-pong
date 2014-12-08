@@ -70,6 +70,11 @@ img.main {
   max-width: 100%
 }
 
+img.info-icon {
+  height: 64px;
+  width: 64px;
+}
+
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
@@ -301,6 +306,7 @@ hr.style-two {
 
 table {
   /*border: 1px solid #373737;*/
+  table-layout: fixed;
   width: 100%;
   margin-bottom: 20px;
   text-align: left;
@@ -317,6 +323,13 @@ td {
   padding: 5px;
   border: 1px solid #373737;
   vertical-align: middle;
+ }
+
+ td.info {
+  padding: 5px;
+  border: 1px solid #373737;
+  vertical-align: middle;
+  width: 33%;
  }
 
 form {
