@@ -67,7 +67,7 @@ img.profile {
 }
 
 img.main {
-  max-width: 100%
+  width: 100%
 }
 
 img.info-icon {
@@ -183,6 +183,7 @@ a.navbar-item {
   float: left;  
   vertical-align: bottom;
   border-bottom: 3px solid #E9E9E9;
+  z-index: 2;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -358,24 +359,9 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 700px;
+  max-width: 960px;
   padding: 20px 10px;
   margin: 0 auto;
-}
-
-#forkme_banner {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
 
 #header_wrap {
@@ -391,12 +377,17 @@ Full-Width Styles
   padding: 20px 10px 15px 10px;
 }
 
+#nav_wrap .inner {
+ padding: 20px 10px 15px 10px; 
+}
+
 #project_title {
   margin: 0;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+  text-align: center;
 }
 
 #project_tagline {
@@ -405,24 +396,17 @@ Full-Width Styles
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+  text-align: center;
 }
 
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-}
-
-#navbar {
+.navbar {
   background-color: #E9E9E9;
-  display: inline;
+  display: block;
   width: 100%;
   overflow-y: hidden;
   position: relative; 
+  z-index: 2;
+  margin-bottom: -20px;
 }
 
 .navbar-item {
@@ -440,6 +424,7 @@ Full-Width Styles
   float: left;  
   vertical-align: bottom;
   border-bottom: 3px solid #E9E9E9;
+  z-index: 2;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -481,17 +466,23 @@ Full-Width Styles
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  z-index: 1;
 }
 
 #main_content {
   padding-top: 25px;
   padding-bottom: 15px;
+  z-index: 1;
 }
 
 #footer_wrap {
   background: #212121;
 }
 
+.cf {
+  overflow: auto;
+  zoom: 1;
+}
 
 
 /*******************************************************************************
