@@ -194,7 +194,6 @@ a.navbar-item {
 
 footer a {
   color: #66CCFF;
-  /*text-decoration: underline;*/
 }
 
 em {
@@ -378,7 +377,7 @@ Full-Width Styles
 }
 
 #nav_wrap .inner {
- padding: 20px 10px 15px 10px; 
+ padding: 0px 10px 15px 10px; 
 }
 
 #project_title {
@@ -406,7 +405,7 @@ Full-Width Styles
   overflow-y: hidden;
   position: relative; 
   z-index: 2;
-  margin-bottom: -20px;
+  margin-bottom: -35px;
 }
 
 .navbar-item {
@@ -431,35 +430,6 @@ Full-Width Styles
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
-}
-
-.tar_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
-}
-
-.tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
 }
 
 #main_content_wrap {
