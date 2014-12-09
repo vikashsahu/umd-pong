@@ -326,9 +326,9 @@ th {
 
 td {
   padding: 2px;
-  border: 1px solid #373737;
+  border: non;
   vertical-align: middle;
-  border: none;
+  text-align: center;
  }
 
  td.info {
@@ -339,8 +339,14 @@ td {
   width: 33%;
  }
 
- td p {
+ td p.top {
   text-align: center;
+  margin: 0 0 0 0;
+ }
+
+ td p.bottom {
+  text-align: center;
+  margin: 0 15px 15px 0;
  }
 
 form {
