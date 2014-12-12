@@ -160,6 +160,10 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
+a.header {
+  color: #66CCFF
+}
+
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -403,6 +407,7 @@ Full-Width Styles
   background: none;
   text-shadow: #111 0px 0px 10px;
   text-align: center;
+
 }
 
 .navbar {
