@@ -171,6 +171,7 @@ a:hover, a:focus {
 a.navbar-item:hover,a:active
 {
   background-color:#66CCFF;
+  text-decoration: none;
 }
 
 a.navbar-item {
